@@ -40,7 +40,16 @@ const Login = () => {
     return (
         <div>
             <Navbar />
-            <div>
+         <div className="flex ">
+            <div className="w-1/2">
+            <iframe
+                    src="https://lottie.host/embed/b23c9409-cfc8-4fe3-8964-3f48be3debb2/ZwUuUorMBo.json"
+                    style={{ width: "100%", height: "100%", border: 'none' }}
+                    title="Lottie Animation"
+                ></iframe>
+            </div>
+            
+            <div className="w-1/2">
                 <h2 className="text-3xl my-10 text-center">Please Login</h2>
                 <button
                     onClick={handleGoogleSignIn}
@@ -70,7 +79,9 @@ const Login = () => {
                 </form>
                 <p className="text-center mt-4">Do not have an account? <Link className="text-blue-600 font-bold" to="/register">Register</Link></p>
             </div>
-        </div>
+            </div>
+         </div>
+        
     );
 };
 

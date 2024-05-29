@@ -2,6 +2,7 @@
 import { Link, useLoaderData } from "react-router-dom";
 import Navbar from "../Shared/Navbar";
 import Swiper from "../Slider/Banner";
+import Banner from "../Slider/Banner";
 
 
 const Home = () => {
@@ -10,7 +11,7 @@ const Home = () => {
         <div className="mt-0">
          
             <Navbar></Navbar>
-            <Swiper></Swiper>
+            <Banner></Banner>
             <div className="mx-auto container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {crafts.slice(0,6).map(craft => (
                     <div key={craft._id} className="p-4 border rounded  shadow-sm">
