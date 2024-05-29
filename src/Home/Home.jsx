@@ -1,14 +1,16 @@
 
 import { Link, useLoaderData } from "react-router-dom";
 import Navbar from "../Shared/Navbar";
+import Swiper from "../Slider/Banner";
 
 
 const Home = () => {
     const crafts = useLoaderData();
     return (
-        <div>
+        <div className="mt-0">
          
             <Navbar></Navbar>
+            <Swiper></Swiper>
             <div className="mx-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {crafts.slice(0,6).map(craft => (
                     <div key={craft._id} className="p-4 border rounded shadow-sm">
