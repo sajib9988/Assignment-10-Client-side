@@ -1,8 +1,9 @@
 
 import { Link, useLoaderData } from "react-router-dom";
 import Navbar from "../Shared/Navbar";
-import Swiper from "../Slider/Banner";
+
 import Banner from "../Slider/Banner";
+
 
 
 const Home = () => {
@@ -14,7 +15,7 @@ const Home = () => {
             <Banner></Banner>
             <div className="mx-auto container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {crafts.slice(0,6).map(craft => (
-                    <div key={craft._id} className="p-4 border rounded  shadow-sm">
+                    <div key={craft._id} className="p-4 border rounded  shadow-sm ">
                         <img src={craft.image} alt={craft.item_name} className="w-full h-48 object-cover mb-4"/>
                         <h2 className="text-xl font-bold">{craft.item_name}</h2>
                         {/* <p className="text-gray-600">{craft.short_description}</p> */}
