@@ -35,15 +35,15 @@ const MyCraft = () => {
   };
 
   return (
-    <div className="gadgetContainer pt-10">
+    <div className="Container mx-auto pt-10">
       <Navbar />
       {items.length === 0 ? (
         <h1 className="flex justify-center items-center text-4xl font-bold mt-10">No products found.</h1>
       ) : (
         <div className="container mx-auto">
-          <div className="mx-3 p-3 gap-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 border rounded shadow-sm">
+          <div className="mx-3 p-3  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 border rounded shadow-sm">
             {items.map((craft) => (
-              <div key={craft._id} className="p-4 border rounded shadow-sm flex flex-col">
+              <div key={craft._id} className="p-4 border rounded shadow-sm flex  flex-col">
                 <img src={craft.image} alt={craft.item_name} className="w-full h-48 object-cover mb-4" />
                 <h2 className="text-xl font-bold">{craft.item_name}</h2>
                 <p className="text-gray-800 font-bold">${craft.price}</p>
