@@ -1,0 +1,188 @@
+[
+  {
+    
+    "image": "https://i.ibb.co/7CvXQ9y/1.jpg",
+    "item_name": "Paper Quilling Earrings",
+    "subcategory_Name": "Paper Crafts",
+    "short_description": "Delicate and eye-catching earrings made using the art of paper quilling. Perfect for adding a touch of elegance to any outfit.",
+    "price": 15.99,
+    "rating": 4.8,
+    "customization": "yes",
+    "processing_time": "3-5 business days",
+    "stockStatus": "In stock",
+    "email": "sajib4ome@gmail.com"
+  },
+  {
+ 
+    "image": "https://i.ibb.co/ZgKBfjJ/2.jpg",
+    "item_name": "Stained Glass Suncatcher",
+    "subcategory_Name": "Glass Art",
+    "short_description": "A beautiful and vibrant stained glass suncatcher that will add a pop of color to your window. Available in a variety of designs.",
+    "price": 29.99,
+    "rating": 4.5,
+    "customization": "yes",
+    "processing_time": "5-7 business days",
+    "stockStatus": "Made to Order",
+    "email": "sajib4ome@gmail.com"
+  },
+  {
+    
+    "image": "https://i.ibb.co/kgccqm7/3.jpg",
+    "item_name": "Origami Paper Crane Mobile",
+    "subcategory_Name": "Paper Crafts",
+    "short_description": "A delightful mobile featuring origami paper cranes. Perfect for a nursery or any room that needs a touch of serenity.",
+    "price": 19.99,
+    "rating": 5,
+    "customization": "no",
+    "processing_time": "1-2 business days",
+    "stockStatus": "In stock",
+    "email": "sajib4ome@gmail.com"
+  },
+  {
+    "_id": "664f61d27a522968b4006196",
+    "image": "https://i.ibb.co/XLR9gR9/4.jpg",
+    "item_name": "Fused Glass Nightlight",
+    "subcategory_Name": "Glass Art",
+    "short_description": "A unique and handcrafted nightlight made from fused glass. Provides a soft and calming glow.",
+    "price": 34.99,
+    "rating": 4.7,
+    "customization": "yes",
+    "processing_time": "7-10 business days",
+    "stockStatus": "Made to Order",
+    "email": "sajib4ome@gmail.com"
+  },
+  {
+    
+    "image": "https://i.ibb.co/g9RS6Tz/5.jpg",
+    "item_name": "3D Paper Flower Wall Art",
+    "subcategory_Name": "Paper Crafts",
+    "short_description": "A stunning piece of 3D paper flower wall art that will make a statement in any room. Available in a variety of colors and sizes.",
+    "price": 49.99,
+    "rating": 4.9,
+    "customization": "yes",
+    "processing_time": "Varies depending on size",
+    "stockStatus": "Made to Order",
+    "email": "sajib4ome@gmail.com"
+  },
+  {
+ 
+    "image": "https://i.ibb.co/fq2qXpR/6.jpg",
+    "item_name": "Glass Bead Bracelet",
+    "subcategory_Name": "Glass Art",
+    "short_description": "A beautiful and colorful bracelet made from glass beads. A perfect gift for any occasion.",
+    "price": 12.99,
+    "rating": 4.3,
+    "customization": "yes",
+    "processing_time": "1-3 business days",
+    "stockStatus": "In stock",
+    "email": "sajib4ome@gmail.com"
+  },
+  {
+   
+    "image": "https://i.ibb.co/WVf1Yyc/7.jpg",
+    "item_name": "Glass Mosaic Coaster",
+    "subcategory_Name": "Glass Art",
+    "short_description": "A beautifully designed glass mosaic coaster that adds an artistic touch to your coffee table. Available in various patterns and colors.",
+    "price": 14.99,
+    "rating": 4.6,
+    "customization": "yes",
+    "processing_time": "3-5 business days",
+    "stockStatus": "In stock",
+    "email": "sajib4ome@gmail.com"
+  },
+  {
+    
+    "image": "https://i.ibb.co/ggS9TfZ/8.jpg",
+    "item_name": "Paper Mache Bowl",
+    "subcategory_Name": "Paper Crafts",
+    "short_description": "A handmade paper mache bowl that is perfect for holding small items or as a decorative piece.",
+    "price": 24.99,
+    "rating": 4.2,
+    "customization": "no",
+    "processing_time": "2-4 business days",
+    "stockStatus": "In stock",
+    "email": "sajib4ome@gmail.com"
+  },
+  {
+    
+    "image": "https://i.ibb.co/XSrsrPD/9.jpg",
+    "item_name": "Glass Wind Chime",
+    "subcategory_Name": "Glass Art",
+    "short_description": "A colorful and melodious glass wind chime that brings a soothing sound to your outdoor space.",
+    "price": 39.99,
+    "rating": 4.8,
+    "customization": "yes",
+    "processing_time": "4-6 business days",
+    "stockStatus": "Made to Order",
+    "email": "sajib4ome@gmail.com"
+  },
+  {
+    
+    "image": "https://i.ibb.co/br9YLcK/10.jpg",
+    "item_name": "Paper Lantern",
+    "subcategory_Name": "Paper Crafts",
+    "short_description": "A beautifully crafted paper lantern that adds a soft and warm light to any room. Available in various colors and designs.",
+    "price": 18.99,
+    "rating": 4.7,
+    "customization": "yes",
+    "processing_time": "1-3 business days",
+    "stockStatus": "In stock",
+    "email": "sajib4ome@gmail.com"
+  },
+  {
+    
+    "image": "https://example.com/stained-glass-panel.jpg",
+    "item_name": "Stained Glass Panel",
+    "subcategory_Name": "Glass Art",
+    "short_description": "An exquisite stained glass panel that can be used as a window decoration or a wall hanging. Available in custom designs.",
+    "price": "59.99",
+    "rating": "4.9",
+    "customization": "yes",
+    "processing_time": "10-15 business days",
+    "stockStatus": "Made to Order",
+    "description": "An exquisite stained glass panel that can be used as a window decoration or a wall hanging. Available in custom designs.",
+    "name": "Stained Glass Panel",
+    "processingTime": "66",
+    "subcategory": "Glass Art",
+    "email": "sajib4ome@gmail.com"
+  },
+  {
+    
+    "image": "https://example.com/paper-flower-bouquet.jpg",
+    "item_name": "Paper Flower Bouquet",
+    "subcategory_Name": "Paper Crafts",
+    "short_description": "A beautiful bouquet of paper flowers that never wilt. Perfect as a long-lasting gift or decoration.",
+    "price": 29.99,
+    "rating": 4.4,
+    "customization": "yes",
+    "processing_time": "3-5 business days",
+    "stockStatus": "In stock",
+    "email": "sajib4ome@gmail.com"
+  },
+  {
+   
+    "name": "Paper Quilling Earrings",
+    "subcategory": "Paper Crafts",
+    "description": "Delicate and eye-catching earrings made using\nthe art of paper quilling. Perfect for adding a touch of elegance to\nany outfit",
+    "price": "15",
+    "rating": "4",
+    "image": "https://i.ibb.co/f9C0Zsz/11.jpg",
+    "customization": "yes",
+    "processingTime": "3-5 business days",
+    "stockStatus": "in stock",
+    "email": "sajib4ome@gmail.com"
+  },
+  {
+    
+    "name": "Paper Quilling Earrings",
+    "subcategory": "Paper Crafts",
+    "description": "Delicate and eye-catching earrings made using\nthe art of paper quilling. Perfect for adding a touch of elegance to\nany outfit",
+    "price": "15",
+    "rating": "4",
+    "image": "https://i.ibb.co/6RFGcND/12.jpg",
+    "customization": "yes",
+    "processingTime": "3-5 business days",
+    "stockStatus": "in stock",
+    "email": "sajib4ome@gmail.com"
+  }
+]
