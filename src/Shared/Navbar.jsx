@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
+import logo from '../assets/logo.jpg'; // Adjust the path as needed
+
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -71,9 +73,10 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <h1 className="text-3xl text-green-700 font-bold">
+        {/* <h1 className="text-3xl text-green-700 font-bold">
           Art & Craft<span className="text-blue-800">s</span>tate
-        </h1>
+        </h1> */}
+        <img className="w-[60px] h-[60px] rounded-full" src={logo} alt="" />
       </div>
       <div className="navbar-center font-bold hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
