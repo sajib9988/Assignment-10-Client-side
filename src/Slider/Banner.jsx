@@ -18,25 +18,25 @@ const Banner = () => {
             >
                 <SwiperSlide>
                     <div className='relative'>
-                        <img className='w-full h-[500px] rounded-lg' src="https://i.ibb.co/WKsFxpr/1.jpg" alt="" />
-                        <p className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center text-white text-2xl" style={{ top: '50%', transform: 'translateY(30%)' }}>
-                            Discover contemporary living in our stunning modern homes.
+                        <img className='w-full h-[500px] rounded-lg' src="https://i.ibb.co/PjkdQkm/3-2.jpg" alt="" />
+                        <p className="absolute inset-0  bg-black bg-opacity-50 text-center text-white text-2xl" style={{ top: '50%', transform: 'translateY(30%)' }}>
+                        Step into a world of artistic wonder at Artisanal Treasures, where every material tells a story and every creation is a masterpiece in the making
                         </p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='relative'>
-                        <img className='w-full h-[500px] rounded-lg' src="https://i.ibb.co/jG5jR3v/2.jpg" alt="" />
-                        <p className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center text-white text-2xl"style={{ top: '50%', transform: 'translateY(30%)' }}>
-                            Experience the charm of our scenic neighborhood communities.
+                        <img className='w-full h-[500px] rounded-lg' src="https://i.ibb.co/MG4stKP/1-2.jpg" alt="" />
+                        <p className="absolute inset-0  bg-black bg-opacity-50 text-center text-white text-2xl"style={{ top: '50%', transform: 'translateY(30%)' }}>
+                        Dive into a world of boundless imagination at Craft Haven, your premier destination for all things art and craft! 
                         </p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='relative'>
-                        <img className='w-full h-[500px] rounded-lg' src="https://i.ibb.co/41YsmrD/3.jpg" alt="" />
-                        <p className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center text-white text-2xl"style={{ top: '50%', transform: 'translateY(30%)' }}>
-                            Indulge in luxury living with our meticulously designed interiors.
+                        <img className='w-full h-[500px] rounded-lg' src="https://i.ibb.co/Lpqf6xr/2-2.jpg" alt="" />
+                        <p className="absolute inset-0  bg-black bg-opacity-50 text-center text-white text-2xl"style={{ top: '50%', transform: 'translateY(30%)' }}>
+                        Welcome to Craftopia, your sanctuary for artistic expression and handmade wonders! Immerse yourself in a world of colors
                         </p>
                     </div>
                 </SwiperSlide>
