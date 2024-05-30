@@ -1,11 +1,13 @@
-import { useContext } from "react";
+// Path: src/components/Navbar.js
+
+import { useState, useEffect, useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 import logo from '../assets/logo.jpg'; // Adjust the path as needed
 
-
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
+  const [fixed, setFixed] = useState(false);
 
   const handleSignOut = () => {
     logOut()
@@ -17,29 +19,56 @@ const Navbar = () => {
       });
   };
 
+  const handleScroll = () => {
+    console.log("ScrollY:", window.scrollY); // Debug log
+    if (window.scrollY >= 42) {
+      setFixed(true);
+    } else {
+      setFixed(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const navLinks = (
     <>
       <li>
-        <NavLink to="/" exact activeClassName="active">
+        <NavLink 
+          to="/" 
+          end 
+          className={({ isActive }) => (isActive ? "text-green-500 underline" : "text-gray-700")}
+        >
           Home
         </NavLink>
       </li>
       {user && (
         <>
           <li>
-            <NavLink to="/addcraftitem" activeClassName="active">
+            <NavLink 
+              to="/addcraftitem" 
+              className={({ isActive }) => (isActive ? "text-green-500 underline" : "text-gray-700")}
+            >
               Add Craft Item
             </NavLink>
           </li>
           <li>
-            <NavLink to="/mycrafts" activeClassName="active">
+            <NavLink 
+              to="/mycrafts" 
+              className={({ isActive }) => (isActive ? "text-green-500 underline" : "text-gray-700")}
+            >
               My Art & Craft List
             </NavLink>
           </li>
         </>
       )}
       <li>
-        <NavLink to="/allartcraft" activeClassName="active">
+        <NavLink 
+          to="/allartcraft" 
+          className={({ isActive }) => (isActive ? "text-green-500 underline" : "text-gray-700")}
+        >
           All Art Craft Item
         </NavLink>
       </li>
@@ -47,7 +76,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-base-100 container mx-auto  mt-0">
+    <div className={`navbar bg-base-100 container mx-auto mt-0 ${fixed ? ' ml-[35px]  fixed top-0    z-50' : ''}`}>
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -73,9 +102,6 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        {/* <h1 className="text-3xl text-green-700 font-bold">
-          Art & Craft<span className="text-blue-800">s</span>tate
-        </h1> */}
         <img className="w-[60px] h-[60px] rounded-full" src={logo} alt="" />
       </div>
       <div className="navbar-center font-bold hidden lg:flex">
