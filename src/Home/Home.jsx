@@ -9,7 +9,7 @@ import Banner from "../Slider/Banner";
 const Home = () => {
     const crafts = useLoaderData();
     return (
-        <div className="mt-0">
+        <div className="mt-0 mx-auto container">
          
             <Navbar></Navbar>
             <Banner></Banner>
