@@ -20,7 +20,7 @@ const Navbar = () => {
   };
 
   const handleScroll = () => {
-    console.log("ScrollY:", window.scrollY); // Debug log
+  
     if (window.scrollY >= 42) {
       setFixed(true);
     } else {

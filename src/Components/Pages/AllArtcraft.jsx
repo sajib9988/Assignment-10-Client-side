@@ -17,11 +17,11 @@ const AllArtcraft = () => {
                         {/* <p className="text-gray-600">{craft.short_description}</p> */}
                         <p className="text-gray-800 font-bold">${craft.price}</p>
                       <div className="flex justify-between">
-                      <Link to={`/update/${craft._id}`}>
+                      {/* <Link to={`/update/${craft._id}`}>
                             <button className="mt-2 bg-green-500 text-white py-2 px-4 rounded">
                                 Update
                             </button>
-                        </Link>
+                        </Link> */}
                         <Link to={`/viewdetails/${craft._id}`}>
                             <button className="mt-2 ml-3 bg-blue-500 text-white py-2 px-4 rounded">
                                 View Details
