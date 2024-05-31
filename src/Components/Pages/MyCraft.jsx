@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import Navbar from "../../Shared/Navbar";
 import { IoIosArrowDown } from "react-icons/io";
+import Swal from 'sweetalert2';
 
 const MyCraft = () => {
   const { user } = useContext(AuthContext);
@@ -20,20 +21,44 @@ const MyCraft = () => {
   }, [user, control]);
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:5000/delete/${id}`, { method: 'DELETE' })
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.deletedCount > 0) {
-          alert('Item deleted successfully');
-          setControl(!control);
-        } else {
-          alert('Failed to delete item');
-        }
-      })
-      .catch((error) => {
-        console.error("Error deleting item:", error);
-        alert('Error deleting item');
-      });
+    Swal.fire({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#d33',
+      cancelButtonColor: '#3085d6',
+      confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        fetch(`http://localhost:5000/delete/${id}`, { method: 'DELETE' })
+          .then((res) => res.json())
+          .then((data) => {
+            if (data.deletedCount > 0) {
+              Swal.fire(
+                'Deleted!',
+                'Your item has been deleted.',
+                'success'
+              );
+              setControl(!control);
+            } else {
+              Swal.fire(
+                'Failed!',
+                'Failed to delete the item.',
+                'error'
+              );
+            }
+          })
+          .catch((error) => {
+            console.error("Error deleting item:", error);
+            Swal.fire(
+              'Error!',
+              'Error deleting item.',
+              'error'
+            );
+          });
+      }
+    });
   };
 
   const handleFilter = (filterValue) => {
