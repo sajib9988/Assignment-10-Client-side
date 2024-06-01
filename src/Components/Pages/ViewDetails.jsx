@@ -1,6 +1,7 @@
 
 import { useLoaderData } from "react-router-dom";
 import Navbar from "../../Shared/Navbar";
+import { Helmet } from "react-helmet";
 
 const ViewDetails = () => {
     const craft = useLoaderData();
@@ -8,6 +9,9 @@ const ViewDetails = () => {
 
     return (
         <div className="container mx-auto">
+                   <Helmet>
+          <title>details</title>
+        </Helmet>
             <Navbar />
             <div className="bg-white p-6 mx-auto mt-9 rounded shadow-md border">
                 <h1 className="text-2xl font-bold text-center mb-4">Craft Details</h1>

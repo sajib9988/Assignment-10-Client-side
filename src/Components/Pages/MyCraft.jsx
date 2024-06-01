@@ -4,6 +4,7 @@ import { AuthContext } from "../../Provider/AuthProvider";
 import Navbar from "../../Shared/Navbar";
 import { IoIosArrowDown } from "react-icons/io";
 import Swal from 'sweetalert2';
+import { Helmet } from "react-helmet";
 
 const MyCraft = () => {
   const { user } = useContext(AuthContext);
@@ -13,7 +14,7 @@ const MyCraft = () => {
 
   useEffect(() => {
     if (user?.email) {
-      fetch(`http://localhost:5000/mycrafts/${user.email}`)
+      fetch(` https://assign-10-backend-side.vercel.app/mycrafts/${user.email}`)
         .then((res) => res.json())
         .then((data) => setItems(data))
         .catch((error) => console.error("Error fetching products:", error));
@@ -31,7 +32,7 @@ const MyCraft = () => {
       confirmButtonText: 'Yes, delete it!'
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/delete/${id}`, { method: 'DELETE' })
+        fetch(`https://assign-10-backend-side.vercel.app/delete/${id}`, { method: 'DELETE' })
           .then((res) => res.json())
           .then((data) => {
             if (data.deletedCount > 0) {
@@ -72,6 +73,9 @@ const MyCraft = () => {
 
   return (
     <div className="container mx-auto pt-10">
+             <Helmet>
+          <title>mycraft</title>
+        </Helmet>
       <Navbar />
       <div className="flex justify-center item-center m-4">
         <div className="dropdown">

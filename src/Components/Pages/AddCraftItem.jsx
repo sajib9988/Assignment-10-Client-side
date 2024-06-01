@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { AuthContext } from '../../Provider/AuthProvider';
 import Navbar from '../../Shared/Navbar';
+import { Helmet } from 'react-helmet';
 
 const AddCraftItem = () => {
 
@@ -34,7 +35,7 @@ const AddCraftItem = () => {
     // For debugging
     console.log(newItem);
 
-    fetch('http://localhost:5000/crafts', {
+    fetch('https://assign-10-backend-side.vercel.app/crafts', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -57,6 +58,9 @@ const AddCraftItem = () => {
 
   return (
     <div className='container mx-auto'>
+             <Helmet>
+          <title>addItem</title>
+        </Helmet>
       <Navbar />
       <div className="bg-white p-6 mx-auto w-full mt-9 rounded shadow-md">
         <h1 className="text-2xl font-bold text-center mb-4">Add Craft Item</h1>

@@ -4,6 +4,7 @@ import { useContext, useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { AuthContext } from "../Provider/AuthProvider";
+import { Helmet } from "react-helmet";
 
 const Register = () => {
   const { createUser, updateUserProfile } = useContext(AuthContext);
@@ -55,6 +56,9 @@ const Register = () => {
 
   return (
     <div>
+             <Helmet>
+          <title>register</title>
+        </Helmet>
       <Navbar />
       <div className="container w-[500px] mx-auto mt-9">
         <div className="hero-content">

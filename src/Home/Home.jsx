@@ -1,7 +1,7 @@
 
 import { Link, useLoaderData } from "react-router-dom";
 import Navbar from "../Shared/Navbar";
-
+import { Helmet } from 'react-helmet';
 import Banner from "../Slider/Banner";
 
 
@@ -10,7 +10,9 @@ const Home = () => {
     const crafts = useLoaderData();
     return (
         <div className="mt-0 mx-auto container">
-         
+               <Helmet>
+          <title>Home</title>
+        </Helmet>
             <Navbar></Navbar>
             <Banner></Banner>
             <div className="mx-auto container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

@@ -40,7 +40,7 @@ const Login = () => {
     return (
         <div>
             <Navbar />
-         <div className="flex ">
+         <div className="flex-col lg:flex ">
             <div className="w-1/2">
             <iframe
                     src="https://lottie.host/embed/b23c9409-cfc8-4fe3-8964-3f48be3debb2/ZwUuUorMBo.json"

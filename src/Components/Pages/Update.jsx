@@ -21,7 +21,7 @@ const Update = () => {
     };
 
     try {
-      const res = await fetch(`http://localhost:5000/crafts/${craft._id}`, {
+      const res = await fetch(`https://assign-10-backend-side.vercel.app/crafts/${craft._id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(updatedItem),

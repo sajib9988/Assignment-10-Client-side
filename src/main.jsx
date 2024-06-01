@@ -29,7 +29,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />,
-        loader: ()=> fetch('http://localhost:5000/crafts')
+        loader: ()=> fetch('https://assign-10-backend-side.vercel.app/crafts')
       },
       {
         path: '/login',
@@ -42,12 +42,12 @@ const router = createBrowserRouter([
       {
         path: '/mycrafts',
         element: <PrivateRouter><MyCraft /></PrivateRouter>,
-        // loader: ()=> fetch('http://localhost:5000/mycrafts')
+        // loader: ()=> fetch(' https://assign-10-backend-side.vercel.app/mycrafts')
       },
       {
         path: '/allartcraft',
         element: <PrivateRouter><AllArtcraft /></PrivateRouter>,
-        loader: ()=> fetch('http://localhost:5000/crafts')
+        loader: ()=> fetch('https://assign-10-backend-side.vercel.app/crafts')
       },
       {
         path: '/addcraftitem',
@@ -56,12 +56,12 @@ const router = createBrowserRouter([
       {
         path: '/update/:id',
         element: <PrivateRouter><Update /></PrivateRouter>,
-        loader: ({params})=> fetch(`http://localhost:5000/crafts/${params.id}`)
+        loader: ({params})=> fetch(`https://assign-10-backend-side.vercel.app/crafts/${params.id}`)
       },
       {
         path: '/viewdetails/:id',
         element: <PrivateRouter><ViewDetails /></PrivateRouter>,
-        loader: ({ params }) => fetch(`http://localhost:5000/crafts/${params.id}`)
+        loader: ({ params }) => fetch(`https://assign-10-backend-side.vercel.app/crafts/${params.id}`)
       }, 
     ],
   }, 
